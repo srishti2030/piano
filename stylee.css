@@ -1,0 +1,193 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    bakground-color: #d896ac;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+.bg
+{
+    width:250%;
+    height: 100%;
+    position:fixed;
+    z-index: -2;
+}
+.area
+{
+    width:660px;
+    height:280px;
+    background: black;
+    margin:auto;
+    margin-top: 200px;
+    margin-left: -45px;
+    border-radius: 20px;
+    box-hadow: 15px 15px 20px rgb(31, 27, 27);
+    position:absolute;
+    z-index:-1;
+}
+.logo
+{
+    width:22%;
+    heigt:40px;
+    backround: green;
+    margin:auto;
+    top:380px;
+    lft:150px;
+    position:absolute;
+    z-index: 2;
+}
+.piano {
+    display: flex;
+    margin-top: 0;
+    margin-left: -45px;
+    position: relative;
+    top: 50px;
+}
+
+.key {
+    height: calc(var(--width)*3.5);
+    width: var(--width);
+    margin-top: 190px;
+    
+}
+
+.white {
+    --width: 43px;
+    background-image: linear-gradient(#e7e6c9,#ffffff);
+    border: 1px solid #333;
+    border-radius: 10px;
+    box-sadow: 0px 0px 30px  rgb(255, 231, 180);
+    transition: 200ms;
+    cursor: pointer;
+    
+}
+
+.black {
+    --width: 32px;
+    background-image: linear-gradient(#434343,#000000);
+    border: 1px solid #333;
+    margin-left: calc(var(--width)/-2);
+    margin-right: calc(var(--width)/-2);
+    z-index: 2;
+    border-radius: 10px;
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.white.active {
+    background-image: linear-gradient(#ffffff,#e7e6c9);
+}
+
+.black.active {
+    background-image: linear-gradient(#000000,#434343);
+}
+
+
+.piano .key:hover {
+    background-color: rgb(140, 101, 230);
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) 
+{
+    body {
+        rotate: 90deg;
+    }
+
+    .container {
+        width: 550px;
+        flex-shrink: 0;
+    }
+
+    .black-key {
+        width: 30px;
+    }
+
+    #w {
+        left: 5%;
+    }
+
+    #e {
+        left: 16%;
+    }
+
+    #t {
+        left: 37.5%;
+    }
+
+    #y {
+        left: 48%;
+    }
+
+    #u {
+        right: 35%;
+    }
+
+    #o {
+        right: 14.5%;
+    }
+
+    #p {
+        right: 4%;
+    }
+
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) 
+{
+	
+    body {
+        rotate: 90deg;
+    }
+
+    .container {
+        width: 550px;
+        flex-shrink: 0;
+    }
+
+    .black-key {
+        width: 30px;
+    }
+
+    #w {
+        left: 5%;
+    }
+
+    #e {
+        left: 16%;
+    }
+
+    #t {
+        left: 37.5%;
+    }
+
+    #y {
+        left: 48%;
+    }
+
+    #u {
+        right: 35%;
+    }
+
+    #o {
+        right: 14.5%;
+    }
+
+    #p {
+        right: 4%;
+    }
+}
+
+
